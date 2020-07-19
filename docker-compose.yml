@@ -1,0 +1,19 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    volumes:
+      - ./data/db:/data/db
+    container_name: mongodb
+    ports:
+      - 27017:27017
+  # online-shop:
+  #   build:
+  #     context: .
+  #   container_name: online-shop
+  #   depends_on:
+  #     - mongodb
+  #   ports:
+  #     - 8100:8100
+  #   env_file:
+  #     - .env
