@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     name: '42mm Space Gray Aluminum Case with Black Woven Nylon',
     price: 249.99,
     discount: null,
@@ -9,6 +10,7 @@ export default [
     validUntil: new Date('2020-01-01'),
   },
   {
+    id: 2,
     name: '42mm Space Gray Aluminum Case with Gold/Royal Blue Woven Nylon',
     price: 249.99,
     discount: null,
@@ -18,6 +20,7 @@ export default [
     validUntil: new Date('2020-01-01'),
   },
   {
+    id: 3,
     name: '42mm Space Gray Aluminum Case with Royal Blue Woven Nylon',
     price: 349.99,
     discount: null,
@@ -27,6 +30,7 @@ export default [
     validUntil: new Date('2020-01-01'),
   },
   {
+    id: 4,
     name: '42mm Space Gray Aluminum Case with Scuba Blue Woven Nylon',
     price: 399.99,
     discount: 25.00,
@@ -36,6 +40,7 @@ export default [
     validUntil: new Date('2020-01-01'),
   },
   {
+    id: 5,
     name: 'Double Tour, 38mm Stainless Steel Case with Etain Leather Band',
     price: 199.99,
     discount: null,
@@ -45,6 +50,7 @@ export default [
     validUntil: new Date('2020-01-01'),
   },
   {
+    id: 6,
     name: 'Double Tour, 38mm Stainless Steel Case with Capucine Leather Band',
     price: 399.99,
     discount: 50.00,
@@ -54,6 +60,7 @@ export default [
     validUntil: new Date('2020-01-01'),
   },
   {
+    id: 7,
     name: 'Double Tour, 38mm Stainless Steel Case with Bleu Jean Leather Band',
     price: 349.99,
     discount: null,
@@ -63,6 +70,7 @@ export default [
     validUntil: new Date('2020-01-01'),
   },
   {
+    id: 8,
     name: 'Double Tour, 42mm Stainless Steel Case with Noir Leather Band',
     price: 249.99,
     discount: null,
