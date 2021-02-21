@@ -11,7 +11,14 @@
 ```sh
 nvm install # installs node version specified in .nvmrc
 cp .env.example .env
-yarn install
+npm install
+```
+
+## Setup dependencies
+
+```sh
+docker-compose up
+npm run db:seeds
 ```
 
 ## Start

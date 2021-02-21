@@ -8,6 +8,7 @@
     "clear:temp": "rm -rf temp",
     "prebuild": "yarn clear:dist",
     "build": "tsc",
+    "db:seeds": "ts-node ./bin/start-db.ts",
     "docs:dev": "redoc-cli serve docs/endpoints.yaml --watch",
     "lint": "eslint src --ext .js,.ts --max-warnings=0",
     "lint:fix": "eslint src --fix --ext .js,.ts",
