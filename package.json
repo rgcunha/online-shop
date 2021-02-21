@@ -6,7 +6,7 @@
   "scripts": {
     "clear:dist": "rm -rf dist",
     "clear:temp": "rm -rf temp",
-    "prebuild": "yarn clear:dist",
+    "prebuild": "npm run clear:dist",
     "build": "tsc",
     "db:seeds": "ts-node ./bin/start-db.ts",
     "docs:dev": "redoc-cli serve docs/endpoints.yaml --watch",
@@ -17,7 +17,7 @@
     "test": "ENVIRONMENT=development npm run test:integration && npm run test:unit",
     "test:unit": "jest src/ --coverage",
     "test:integration": "jest test/integration --coverage",
-    "prei18nLint": "yarn clear:temp && tsc --outDir temp",
+    "prei18nLint": "npm run clear:temp && tsc --outDir temp",
     "i18nLint": "i18nLint",
     "i18nLint:fix": "i18nLint -f",
     "i18nSync": "i18nSync"
