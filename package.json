@@ -12,7 +12,7 @@
     "docs:dev": "redoc-cli serve docs/endpoints.yaml --watch",
     "lint": "eslint src --ext .js,.ts --max-warnings=0",
     "lint:fix": "eslint src --fix --ext .js,.ts",
-    "prod": "node dist/server.js",
+    "prod": "node ./dist/src/Server.js",
     "start": "ts-node src/server.ts",
     "test": "ENVIRONMENT=development npm run test:integration && npm run test:unit",
     "test:unit": "jest src/ --coverage",
