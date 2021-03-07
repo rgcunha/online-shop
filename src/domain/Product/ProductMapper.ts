@@ -10,6 +10,7 @@ export default class ProductMapper {
       discount: product.discount,
       validFrom: product.validFrom.toISOString(),
       validUntil: product.validUntil.toISOString(),
+      img: product.imageUrl,
     }
   }
 
@@ -20,7 +21,8 @@ export default class ProductMapper {
       price: dto.price,
       discount: dto.discount,
       validFrom: dto.validFrom,
-      validUntil: dto.validUntil
+      validUntil: dto.validUntil,
+      imageUrl: dto.img,
     })
   }
 }

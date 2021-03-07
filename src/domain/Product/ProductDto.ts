@@ -5,4 +5,5 @@ export default interface ProductDTO {
   discount: Number;
   validFrom: String;
   validUntil: String;
+  img: String;
 };

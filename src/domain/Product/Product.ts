@@ -6,6 +6,7 @@ export interface IProduct extends Document {
   description: String,
   price: Number,
   discount: Number,
+  imageUrl: String,
   validFrom: Date,
   validUntil: Date,
 }
@@ -16,6 +17,7 @@ const ProductSchema: Schema = new Schema({
   description: String,
   price: Number,
   discount: Number,
+  imageUrl: String,
   validFrom: Date,
   validUntil: Date,
 });
