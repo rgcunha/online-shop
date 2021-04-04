@@ -1,5 +1,6 @@
 import Product from './Product';
-import ProductDTO from './ProductDto';
+import ProductDTO, { Badge } from './ProductDto';
+import moment from 'moment';
 
 export default class ProductMapper {
   static toDto(product: Product): ProductDTO {
@@ -11,6 +12,7 @@ export default class ProductMapper {
       validFrom: product.validFrom.toISOString(),
       validUntil: product.validUntil.toISOString(),
       img: product.imageUrl,
+      badge: ProductMapper.calculateBadge(product),
     }
   }
 
@@ -24,5 +26,11 @@ export default class ProductMapper {
       validUntil: dto.validUntil,
       imageUrl: dto.img,
     })
+  }
+
+  private static calculateBadge(product: Product): Badge | null {
+    if (product.discount) return Badge.SALE;
+    if (moment(Date.now()).diff(product.validFrom, 'months') < 3) return Badge.NEW;
+    return null;
   }
 }
