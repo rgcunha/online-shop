@@ -1,3 +1,8 @@
+export enum Badge {
+  SALE = 'sale',
+  NEW = 'new',
+}
+
 export default interface ProductDTO {
   name: String;
   description: String;
@@ -6,4 +11,5 @@ export default interface ProductDTO {
   validFrom: String;
   validUntil: String;
   img: String;
+  badge: Badge | null;
 };
