@@ -66,8 +66,8 @@ export default [
     discount: null,
     imageUrl: 'https://drive.google.com/uc?export=view&id=1Elr4Yqe4tJpU7G9SHEPFxTgpSMHyfj5C',
     badge: null,
-    validFrom: new Date('2020-01-01'),
-    validUntil: new Date('2020-01-01'),
+    validFrom: new Date(),
+    validUntil: new Date().setFullYear(new Date().getFullYear() + 1),
   },
   {
     id: 8,
