@@ -1,8 +1,11 @@
 import expressWinston from "express-winston";
 import { Logger } from "../services/Logger";
 import { Handler } from "express";
+import { container } from "../Container";
+import TYPES from "../constant/types";
 
-export function loggingMiddleware(logger: Logger): Handler {
+export function loggingMiddleware(): Handler {
+  const logger: Logger = container.get(TYPES.Logger);
   return expressWinston.logger({
     winstonInstance: logger.getLogger(),
     meta: true, // optional: control whether you want to log the meta data about the request (default to true)

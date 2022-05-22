@@ -29,6 +29,18 @@ The server runs on port `8100` by default unless a different value is specified 
 npm start
 ```
 
+## API
+
+### Sign-in
+```sh
+curl -X POST -H "Content-Type: application/json" http://localhost:8100/api/users/sign-in -d '{"email": "max.mustermann@xpto.com", "password": "12345" }'
+```
+
+### Sign-up
+```sh
+curl -X POST -H "Content-Type: application/json" http://localhost:8100/api/users/sign-up -d '{"email": "max.mustermann@xpto.com", "password": "12345" }'
+```
+
 ## Run everything locally
 
 Make sure to create an `.env` file from the `.env.example` and add the needed values.
