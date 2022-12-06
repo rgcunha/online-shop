@@ -45,7 +45,7 @@
     "moment": "2.29.1",
     "mongoose": "5.9.25",
     "nodemon": "2.0.4",
-    "qs": "6.9.4",
+    "qs": "6.9.7",
     "reflect-metadata": "0.1.13",
     "source-map-support": "0.5.19",
     "winston": "3.3.3"
